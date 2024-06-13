@@ -17,7 +17,7 @@ export default function Section(props) {
                             <button className="bg-white text-blue-500 border border-blue-500 font-bold py-2 px-4 rounded-lg">Departments</button>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 bg-blue-200 rounded-lg h-64 lg:h-auto">
+                    <div className="lg:w-1/2 bg-blue-200 rounded-lg h-64 lg:h-80">
                         
                     </div>
                 </div>

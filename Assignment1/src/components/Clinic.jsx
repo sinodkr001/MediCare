@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from '../assets/product/doc.jpeg';
+import Boy from '../assets/product/boy.jpeg'
+import Amb from '../assets/product/a1.png'
+import Medi from '../assets/product/medi.jpeg'
 
 export default function Clinic(props) {
     
@@ -6,35 +10,45 @@ export default function Clinic(props) {
     return (
         <>
             <div className='bg-gray-100'>
-            <div class="container mx-auto px-4 py-12">
-        <div class="flex flex-col lg:flex-row items-center">
-            <div class="lg:w-1/2 mb-8 lg:mb-0">
-                <h1 class="text-3xl font-bold text-blue-900 mb-4">Clinic With Innovative</h1>
-                <p class="text-gray-600 mb-6">We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help.</p>
-                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-lg">Learn More</button>
-            </div>
-            <div class="lg:w-1/2 flex flex-wrap justify-center lg:justify-end">
-                <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <img src="path/to/doctor-icon.png" alt="Qualified Doctors" class="mx-auto mb-4"/>
-                        <h2 class="text-lg font-semibold text-gray-800">Qualified Doctors</h2>
+                
+
+
+
+                <div className="container mx-auto px-6 py-12">
+                    <div className="text-center lg:text-left lg:flex lg:items-center lg:space-x-12">
+                        <div className="lg:w-1/2 mx-12 mb-12 lg:mb-0">
+                            <h1 className="text-4xl font-bold text-blue-600 mb-4">Clinic With Innovative</h1>
+                            <p className="text-gray-600 mb-6">
+                                We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help.
+                            </p>
+                            <a href="#" className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <img src={Image} alt="Qualified Doctors" class="mx-auto mb-4"/>
+                                <h3 class="text-lg font-semibold text-gray-700">Qualified Doctors</h3>
+                            </div>
+                            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <img src={Boy} alt="Emergency Care" className="mx-auto mb-4"/>
+                                <h3 class="text-lg font-semibold text-gray-700">Emergency Care</h3>
+                            </div>
+                            
+                            
+                            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <img src={Amb} alt="24 Hours Service" className="mx-auto mb-4"/>
+                                <h3 className="text-lg font-semibold text-gray-700">24 Hours Service</h3>
+                            </div>
+                            
+                            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <img src={Medi} alt="24 Hours Service" className="mx-auto mb-4"/>
+                                <h3 className="text-lg font-semibold text-gray-700 mt-16">Medicine</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <img src="path/to/emergency-icon.png" alt="Emergency Care" class="mx-auto mb-4"/>
-                        <h2 class="text-lg font-semibold text-gray-800">Emergency Care</h2>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <img src="path/to/ambulance-icon.png" alt="24 Hours Service" class="mx-auto mb-4"/>
-                        <h2 class="text-lg font-semibold text-gray-800">24 Hours Service</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
             </div>
         </>
     )
